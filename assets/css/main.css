@@ -88,7 +88,7 @@ h1 {
 }
 
 .contact-icons {
-    font-size: 20px;
+    font-size: 10px;
 }
 
 .contact-icons a i {
@@ -100,17 +100,80 @@ h1 {
     color: #007bff !important; /* Change to orange on hover */
 }
 
-
-.tools{
+.tools {
     padding-top: 70px;
     padding-bottom: 70px;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
 }
 
 .tools-container {
-    font-size: 40px;
-    margin-top: 20px;
+    width: 100%;
+    overflow: hidden; /* Ensures content outside bounds is hidden */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    padding-top: 30px;
 }
 
+.icon-row {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    animation: scroll-horizontal 10s linear infinite;
+    white-space: nowrap;
+    position: relative;
+}
+
+.icon-row.reverse {
+    animation: scroll-horizontal-reverse 10s linear infinite;
+}
+
+.icon-row i {
+    font-size: 60px;
+    color: #4a4a4a;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.icon-row i:hover {
+    transform: scale(1.3);
+    color: #1e90ff;
+}
+
+/* Keyframes for forward scrolling */
+@keyframes scroll-horizontal {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Keyframes for reverse scrolling */
+@keyframes scroll-horizontal-reverse {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(50%);
+    }
+}
+
+/* Wrapper for smooth looping */
+.icon-row::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
+}
+
+  
 .experience {
     padding-bottom: 70px;
 }
