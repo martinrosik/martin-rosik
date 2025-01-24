@@ -132,10 +132,6 @@ h1 {
     animation: scroll-horizontal-reverse 15s linear infinite;
 }
 
-.icon-row:hover {
-    animation-play-state: paused; /* Pause animation on hover */
-}
-
 .icon-row i {
     font-size: 60px;
     color: #4a4a4a;
@@ -166,7 +162,6 @@ h1 {
         transform: translateX(100%);
     }
 }
-
 
 /* Wrapper for smooth looping */
 .icon-row::after {
