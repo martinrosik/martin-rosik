@@ -123,13 +123,17 @@ h1 {
     display: flex;
     gap: 20px;
     justify-content: flex-start;
-    animation: scroll-horizontal 10s linear infinite;
+    animation: scroll-horizontal 15s linear infinite;
     white-space: nowrap;
     position: relative;
 }
 
 .icon-row.reverse {
-    animation: scroll-horizontal-reverse 10s linear infinite;
+    animation: scroll-horizontal-reverse 15s linear infinite;
+}
+
+.icon-row:hover {
+    animation-play-state: paused; /* Pause animation on hover */
 }
 
 .icon-row i {
@@ -146,22 +150,23 @@ h1 {
 /* Keyframes for forward scrolling */
 @keyframes scroll-horizontal {
     0% {
-        transform: translateX(0);
+        transform: translateX(100%);
     }
     100% {
-        transform: translateX(-50%);
+        transform: translateX(-100%);
     }
 }
 
 /* Keyframes for reverse scrolling */
 @keyframes scroll-horizontal-reverse {
     0% {
-        transform: translateX(0);
+        transform: translateX(-100%);
     }
     100% {
-        transform: translateX(50%);
+        transform: translateX(100%);
     }
 }
+
 
 /* Wrapper for smooth looping */
 .icon-row::after {
