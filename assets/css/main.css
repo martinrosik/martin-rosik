@@ -1,0 +1,225 @@
+/* General Body Styling */
+body {
+    font-family: 'Roboto Mono' !important;
+    background-color: #2f2f2f;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.site-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.site-nav .logo {
+    font-size: 1.7rem;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 150px;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.site-nav .logo:hover {
+    color: #007bff;
+}
+
+.site-nav .main-menu {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+    padding-right: 70px;
+    margin: 0;
+    margin-left: auto;
+}
+
+.site-nav .main-menu li {
+    position: relative;
+}
+
+.site-nav .main-menu li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.site-nav .main-menu li a:hover {
+    color: #007bff; /* Blue color for hover effect */
+}
+
+/* Language menu specific */
+.site-nav .main-menu:last-of-type li {
+    color: #000000;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .site-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .site-nav .main-menu {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        margin-left: 0; /* Reset margin for responsive layout */
+    }
+}
+
+
+
+.card {
+    margin-top: 100px;
+}
+
+.contact-icons {
+    font-size: 20px;
+}
+
+.contact-icons a i {
+    color: #000000; /* Default color */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.contact-icons a:hover i {
+    color: #007bff !important; /* Change to orange on hover */
+}
+
+
+.tools{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.tools-container {
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.experience {
+    padding-bottom: 70px;
+}
+
+/* General styles for the timeline */
+.timeline {
+    position: relative;
+    margin: 20px 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Timeline items */
+.timeline-item {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 40px; /* Space for the dot */
+}
+
+/* Timeline date */
+.timeline-date {
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+/* Timeline content */
+.timeline-content {
+    background: #f9f9f9;
+    padding: 10px 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Timeline dots */
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 10px;
+    height: 10px;
+    background-color: #007bff; /* Dot color */
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #fff; /* Adds a border around the dot */
+}
+
+/* Timeline line */
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    width: 2px;
+    background-color: #ccc;
+}
+
+.contact-content {
+    padding-bottom: 150px;
+}
+
+.contact-icons {
+    font-size: 50px;
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Ensures icons are evenly spaced horizontally */
+    align-items: center;    /* Ensures vertical alignment */
+    gap: 70px;              /* Adjust spacing between icon groups */
+}
+
+.contact-icons div {
+    display: flex;
+    flex-direction: column; /* Stacks icon and text vertically */
+    align-items: center;    /* Centers icon and text horizontally */
+    text-align: center;
+}
+
+.contact-icons a i {
+    font-size: 2.5rem;
+    color: #fff;
+    transition: color 0.3s ease, transform 0.2s ease;
+    margin-bottom: 5px;     /* Adds space between the icon and its label */
+}
+
+.contact-icons a:hover i {
+    color: #007bff;
+    transform: scale(1.1);
+}
+
+.contact-info {
+    font-size: 15px;
+    color: rgb(98, 98, 98);
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .contact-icons {
+        flex-direction: column; /* Stacks icon groups vertically */
+        gap: 30px;             /* Reduces spacing for smaller screens */
+    }
+
+    .contact-icons div {
+        flex-direction: row;  /* Icon and text side by side */
+        gap: 10px;            /* Smaller spacing between icon and text */
+    }
+}
+
+footer {
+    font-size: 13px;
+}
