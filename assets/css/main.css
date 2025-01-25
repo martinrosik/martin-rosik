@@ -1,7 +1,6 @@
 /* General Body Styling */
 body {
     font-family: 'Roboto Mono' !important;
-    background-color: #2f2f2f;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -172,11 +171,7 @@ h1 {
     height: 100%;
     transform: translateX(100%);
 }
-
-  
-.experience {
-    padding-bottom: 70px;
-}
+ 
 
 /* General styles for the timeline */
 .timeline {
@@ -281,10 +276,6 @@ h1 {
         flex-direction: row;  /* Icon and text side by side */
         gap: 10px;            /* Smaller spacing between icon and text */
     }
-}
-
-.story-intro {
-    
 }
 
 .story-timeline {
@@ -425,6 +416,7 @@ h1 {
 }
 
 .small-projects {
+    padding-top: 70px;
     padding-bottom: 150px;
 }
 
@@ -496,6 +488,9 @@ h1 {
     text-decoration: none; /* No underline on hover */
 }
 
+.portfolio-index {
+    padding-top: 70px;
+}
 
 footer {
     font-size: 13px;
