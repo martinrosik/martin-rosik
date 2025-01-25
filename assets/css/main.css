@@ -134,7 +134,7 @@ h1 {
 
 .icon-row i {
     font-size: 60px;
-    color: #4a4a4a;
+    color: #000000;
     transition: transform 0.3s, color 0.3s;
 }
 
@@ -341,7 +341,7 @@ h1 {
 
 .story-timeline-content p {
     margin: 5px 0 0;
-    color: #6c757d;
+    color: #000000;
 }
 
 @media (max-width: 768px) {
@@ -361,6 +361,139 @@ h1 {
     .story-timeline-content {
         text-align: left;
     }
+}
+/* Carousel Styling */
+/* Center the Carousel in the Container */
+.carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.carousel-inner {
+    width: 100%;
+    max-width: 800px; /* Restrict maximum width */
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px; /* Match the height of images */
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 100%; /* Stretch image to fill width */
+    height: 425px; /* Fixed height for uniformity */
+    object-fit: cover; /* Crop the image to fit while maintaining aspect ratio */
+    border-radius: 12px; /* Rounded corners */
+    transition: transform 0.3s ease-in-out; /* Smooth hover animation */
+}
+
+.carousel-item img:hover {
+    transform: scale(1.05);
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+    .carousel-item img {
+        height: 250px;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-item img {
+        height: 200px;
+    }
+}
+
+.small-projects {
+    padding-bottom: 150px;
+}
+
+/* Base styling for the card container */
+.card {
+    height: 200px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+}
+
+/* Hover effect for the card */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling */
+.card-img-top {
+    height: 150px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    transition: filter 0.3s ease;
+}
+
+/* Image hover effect */
+.card:hover .card-img-top {
+    filter: brightness(0.9);
+}
+
+/* Card body styling */
+.card-body {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Title styling */
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+/* Text styling */
+.card-text {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Change title color on hover */
+.card:hover .card-title {
+    color: #007bff;
+}
+
+.card-link {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Ensures text inherits color from parent */
+}
+
+.card-link:hover {
+    text-decoration: none; /* No underline on hover */
 }
 
 
