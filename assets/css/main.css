@@ -25,12 +25,19 @@ h1 {
     color: #000;
     text-decoration: none;
     font-weight: bold;
-    padding-left: 150px;
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    padding-left: 200px;
+    transition: color 0.3s ease;
+    margin-right: auto; /* Push logo to the left */
 }
 
 .site-nav .logo:hover {
     color: #007bff;
+}
+
+.site-nav .main-menu-container {
+    flex-grow: 1; /* Use remaining space to center links */
+    display: flex;
+    justify-content: center; /* Center the links horizontally */
 }
 
 .site-nav .main-menu {
@@ -38,9 +45,7 @@ h1 {
     display: flex;
     gap: 1.5rem;
     padding: 0;
-    padding-right: 70px;
     margin: 0;
-    margin-left: auto;
 }
 
 .site-nav .main-menu li {
@@ -55,14 +60,7 @@ h1 {
 }
 
 .site-nav .main-menu li a:hover {
-    color: #007bff; /* Blue color for hover effect */
-}
-
-/* Language menu specific */
-.site-nav .main-menu:last-of-type li {
-    color: #000000;
-    cursor: pointer;
-    font-weight: bold;
+    color: #007bff;
 }
 
 /* Responsive design */
