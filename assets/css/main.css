@@ -97,6 +97,16 @@ h1 {
     color: #007bff !important; /* Change to orange on hover */
 }
 
+.resume-icon i{
+    font-size: 25px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.resume-icon:hover i{
+    color: #007bff !important;
+    transform: scale(1.2);
+}
+
 .tools {
     padding-top: 70px;
     padding-bottom: 70px;
@@ -474,7 +484,7 @@ h1 {
 
 /* Change title color on hover */
 .card:hover .card-title {
-    color: #007bff;
+    color: #007bff; 
 }
 
 .card-link {
@@ -488,6 +498,15 @@ h1 {
 
 .portfolio-index {
     padding-top: 70px;
+}
+
+.project-icon {
+    font-size: 30px;
+}
+
+.card:hover .project-icon {
+    color: #007bff;
+    transition: color 0.3s ease;
 }
 
 footer {
